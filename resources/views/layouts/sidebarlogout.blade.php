@@ -1,7 +1,7 @@
 <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="{{ URL::to('main') }}">
                 <i class="fa fa-fw fa-dashboard"></i>
                 <span class="nav-link-text">Dashboard</span>
             </a>
@@ -14,10 +14,10 @@
             </a>
             <ul class="sidenav-second-level collapse" id="collapseComponents">
                 <li>
-                    <a href="">Add Student Info</a>
+                    <a href="{{ URL::to('main/create') }}">Add Student Info</a>
                 </li>
                 <li>
-                    <a href="">View Students Info</a>
+                    <a href="{{ URL::to('main') }}">View Students Info</a>
                 </li>
             </ul>
         </li>

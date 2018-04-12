@@ -49,7 +49,8 @@ class StudentController extends Controller
      */
     public function show($id)
     {
-        //
+        $data=StudentModel::findOrFail($id);
+        return view('front_end.showstudent', compact('data'));
     }
 
     /**

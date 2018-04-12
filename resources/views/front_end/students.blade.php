@@ -11,7 +11,7 @@
     <table class="table table-striped table-bordered">
 
         <tr>
-            <th>Serial Number</th>
+            <th>Serial</th>
             <th>Student Name</th>
             <th>Student Roll</th>
             <th>Student Dept</th>
@@ -24,8 +24,8 @@
         @foreach($data as $all_students)
 
             <tr>
-                <td> {{ $all_students->id }} </td>
-                <td> {{ $all_students->name }} </td>
+                <td> {{ $sl++ }} </td>
+                <td> <a href="{{ route('main.show', $all_students->id) }}"> {{ $all_students->name }} </a></td>
                 <td> {{ $all_students->roll }} </td>
                 <td> {{ $all_students->dept }} </td>
                 <td> {{ $all_students->age }}</td>
